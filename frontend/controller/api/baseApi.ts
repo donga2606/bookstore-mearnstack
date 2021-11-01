@@ -2,7 +2,7 @@ import axios, { AxiosResponse } from "axios";
 
 // axios.defaults.baseURL = "http://localhost:9889/api/";
 
-axios.defaults.baseURL = "https://server-bookstores.herokuapp.com/api/";
+axios.defaults.baseURL = "https://server-da-book.herokuapp.com/api/";
 
 interface IApi {
   get: (url: string) => Promise<AxiosResponse | undefined>;
