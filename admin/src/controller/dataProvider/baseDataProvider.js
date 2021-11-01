@@ -1,6 +1,7 @@
 import { fetchUtils } from "react-admin";
 import { stringify } from "query-string";
-const apiUrl = "http://localhost:9889/api";
+// const apiUrl = "http://localhost:9889/api";
+const apiUrl = "http://server-da-book.herokuapp.com/api";
 
 const httpClient = function (url, options = {}) {
   if (!options.headers) {
