@@ -1,0 +1,33 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:9889",
+  "scripts": {
+    "dev": "next dev -p 6889",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@mui/icons-material": "^5.0.1",
+    "@mui/material": "^5.0.1",
+    "@mui/styles": "^5.0.1",
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "fs": "^0.0.1-security",
+    "next": "^11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sharp": "^0.29.2",
+    "styled-components": "^5.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.13",
+    "eslint": "7.30.0",
+    "eslint-config-next": "11.0.1",
+    "typescript": "4.3.5"
+  }
+}

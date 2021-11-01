@@ -1,0 +1,6 @@
+export {default as AuthRouter} from './Auth'
+export {default as UserRouter} from './User'
+export {default as BookRouter} from './Book'
+export {default as AuthorRouter} from './Author'
+export {default as ListRouter} from './List'
+export {default as ImageRouter} from './Image'

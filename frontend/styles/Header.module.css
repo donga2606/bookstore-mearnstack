@@ -1,0 +1,253 @@
+.nav {
+  background-color: var(--color-secondary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  top: 0;
+  z-index: 100;
+}
+
+.nav__wrapper {
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+/* nav left */
+.nav__left {
+  display: flex;
+  align-items: center;
+}
+
+/* nav brand */
+.nav__brand {
+  margin-right: 2rem;
+}
+.brand__img {
+  height: 2.7rem;
+  max-width: 100%;
+}
+
+/* nav search */
+.search {
+  padding: 8px 16px;
+  background-color: var(--color-callout);
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+.search__input {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.search__button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.search__button:hover {
+  cursor: pointer;
+}
+
+.search__img {
+  display: block;
+  width: 13px;
+}
+.nav__social {
+  margin: 0 1.6rem;
+}
+.nav__social-icon {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+/* nav left end */
+
+/* nav center */
+.nav__center {
+  color: #fff;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* nav center end */
+
+/* nav right */
+.nav__right {
+  align-items: center;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 9px 0;
+}
+
+.nav__right-item {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+.cart__number {
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  right: 1rem;
+  top: 0;
+  margin-right: -0.5rem;
+  margin-top: -0.5rem;
+  padding: 2px 3px;
+  text-align: center;
+  background-color: var(--color-primary);
+}
+
+.drop-down {
+  position: absolute;
+  font-size: 1.3rem;
+  font-weight: 400;
+  white-space: nowrap;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 30px);
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  color: var(--color-gray-light);
+  border-radius: 0.3rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  opacity: 0;
+  text-align: center;
+  width: 70px;
+  transition: all 0.4s ease-in-out;
+  pointer-events: none;
+}
+
+.drop-down::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -70%);
+  width: 0;
+  height: 0;
+  border-left: 1.2rem solid transparent;
+  border-right: 1.2rem solid transparent;
+  border-bottom: 1.5rem solid #fff;
+}
+
+.nav__right-item:hover .drop-down {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.large-text {
+  font-size: 1.8rem;
+}
+
+.mobile-off-btn {
+  display: none;
+  cursor: pointer;
+}
+
+.big-icon {
+  font-size: 2rem;
+}
+/* nav right end */
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 40;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100vw);
+  color: var(--color-dark-text);
+  overflow: scroll;
+  display: none;
+}
+
+.mobile-menu.mobile-open {
+  transform: translateX(0);
+}
+
+.mobile-on-btn {
+  position: fixed;
+  right: 3rem;
+  top: 0rem;
+  color: var(--color-secondary);
+  z-index: 999;
+  font-size: 2rem;
+  border-radius: 500px;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+}
+.mobile-on-btn.mobile-open {
+  display: block;
+}
+
+.menu__wrapper {
+  padding: 4rem 2rem 10rem;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-dark-text);
+}
+
+.category__item {
+  font-size: 1.6rem;
+  font-weight: normal;
+  background-color: var(--color-callout);
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 5px 0;
+}
+
+.btn__wrapper {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.mobile__title {
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem 0 1.6rem;
+}
+/* media query */
+@media (max-width: 64em) {
+  .search,
+  .nav__social,
+  .nav__center,
+  .nav__browse,
+  .search__wrapper {
+    display: none;
+  }
+  .nav__wrapper {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+  .nav__right-item {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .cart__number {
+    right: 1.4rem;
+  }
+  .mobile-off-btn {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}

@@ -1,0 +1,21 @@
+.contribute{
+    top: 64px;
+    text-align: center  ;
+    font-size: 1.6rem;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--color-border);
+    background-color: #fff;
+    z-index: 30;
+}
+
+.contribute__info{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-gray-light);
+}
+.contribute__number{
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--color-secondary);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+

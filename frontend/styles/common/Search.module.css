@@ -1,0 +1,38 @@
+.search {
+  border-radius: 9999px;
+  background-color: #fff;
+  width: 34rem;
+  padding: 8px 8px 8px 24px;
+  display: flex;
+  align-items: center;
+}
+
+.search__input[type="text"] {
+  display: block;
+  border: none;
+  line-height: 3rem;
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+.search__input[type="text"]::placeholder {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color-gray-light);
+}
+
+.search__button {
+  width: 40px;
+  height: 40px;
+}
+
+.search__img {
+  width: 100%;
+}
+
+@media (max-width: 48em) {
+  .search {
+    width: 20em;
+  }
+}
