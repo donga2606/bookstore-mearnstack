@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import { useRouter } from "next/dist/client/router";
+import { useRouter } from "next/router";
 import HeadLayout from "./HeadLayout";
 import Toast from "./Toast";
 const Layout: FC = ({ children }) => {
