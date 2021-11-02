@@ -52,7 +52,7 @@ const Header: FC = () => {
               />
               <button className={styles.search__button} type="button">
                 <img
-                  src="https://res.cloudinary.com/dnlsengxv/image/upload/v1635840101/bookstore/frontend/search-red_v96ucx.svg"
+                  src="https://res.cloudinary.com/dnlsengxv/image/upload/v1635840100/bookstore/frontend/search_munivl.svg"
                   alt="search"
                   className={styles.search__img}
                 />
@@ -81,7 +81,10 @@ const Header: FC = () => {
           <li className={`${styles["nav__right-item"]} pos_relative `}>
             <Link href="/cart">
               <a className="cursor-pointer">
-                <img src="https://res.cloudinary.com/dnlsengxv/image/upload/v1635840097/bookstore/frontend/cart_szdgwr.svg" alt="Cart" />
+                <img
+                  src="https://res.cloudinary.com/dnlsengxv/image/upload/v1635840097/bookstore/frontend/cart_szdgwr.svg"
+                  alt="Cart"
+                />
                 {cart.orderBooks.length !== 0 && (
                   <div className={styles.cart__number}>
                     {cart.orderBooks.length}
@@ -93,7 +96,10 @@ const Header: FC = () => {
           <li
             className={`${styles["nav__right-item"]} pos_relative cursor-pointer `}
           >
-            <img src="https://res.cloudinary.com/dnlsengxv/image/upload/v1635840103/bookstore/frontend/user_d7tupj.svg" alt="User" />
+            <img
+              src="https://res.cloudinary.com/dnlsengxv/image/upload/v1635840103/bookstore/frontend/user_d7tupj.svg"
+              alt="User"
+            />
             {!isLogin ? (
               <div className={`${styles["drop-down"]} cursor-pointer`}>
                 <Link href="/login">
