@@ -30,7 +30,6 @@ const Header: FC = () => {
     console.log(isAuth);
     setIsLogin(isAuth);
   }, [auth]);
-  console.log(cart);
   return (
     <nav className={`sticky ${styles.nav} }`}>
       <div className={`${styles.nav__wrapper}`}>

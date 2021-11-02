@@ -2,7 +2,7 @@ import "../styles/normalize.css";
 import "../styles/global.css";
 import Layout from "../components/Layout";
 import type { AppProps } from "next/app";
-import { ThemeProvider } from "@mui/material/node_modules/@mui/system";
+import { ThemeProvider } from "@mui/material";
 import theme from "../utils/theme";
 import { DataProvider } from "../controller/store/globalstate";
 
