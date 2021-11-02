@@ -62,7 +62,6 @@ const dataProvider = {
     })
       .then(({ json }) => ({ data: json.data }))
       .catch((e) => {
-        console.log(e);
         return Promise.reject(e);
       });
   },

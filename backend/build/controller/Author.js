@@ -155,7 +155,6 @@ var AuthorCallback = /** @class */ (function () {
                     case 0:
                         _c.trys.push([0, 6, , 7]);
                         _id = req.params.id;
-                        console.log(req.body.books_ids);
                         return [4 /*yield*/, models_1.AuthorModel.findOneAndUpdate({
                                 _id: _id,
                             }, __assign(__assign({}, req.body), { books: req.body.books_ids }), { new: true }, printQueryMongoose_1.default)];

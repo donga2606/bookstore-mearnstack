@@ -15,7 +15,6 @@ export default async function verifyToken(
       .status(403)
       .json({ error: "A token is required for authentication" });
   try {
-    console.log("test");
     const decoded: any = jwt.verify(token, secretKey);
     const payload = await UserModel.findById(decoded.user_id);
     if (payload) {

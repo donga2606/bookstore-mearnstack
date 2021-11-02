@@ -12,7 +12,6 @@ const authProvider = {
         if (response.status < 200 || response.status >= 300) {
           throw new Error(response.statusText);
         }
-        console.log(response);
 
         return response.json();
       })

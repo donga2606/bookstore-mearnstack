@@ -74,7 +74,6 @@ var AuthCallback = /** @class */ (function () {
                     case 3:
                         payload = _a.sent();
                         token = jsonwebtoken_1.default.sign({ user_id: newUser._id }, secretKey);
-                        console.log(token);
                         return [2 /*return*/, res.json({ success: true, data: payload, token: token })];
                     case 4:
                         err_1 = _a.sent();

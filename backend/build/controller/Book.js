@@ -114,7 +114,6 @@ var BookCallback = /** @class */ (function () {
                     case 0:
                         _a.trys.push([0, 3, , 4]);
                         data = __assign(__assign({}, req.body), { author: req.body.authorID });
-                        console.log(data);
                         return [4 /*yield*/, models_1.BookModel.create(data)];
                     case 1:
                         payload = _a.sent();

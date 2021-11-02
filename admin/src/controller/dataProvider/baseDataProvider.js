@@ -44,7 +44,6 @@ const baseDataProvider = {
         };
       })
       .catch((e) => {
-        console.log(e);
         return Promise.reject(e);
       });
   },
@@ -54,7 +53,6 @@ const baseDataProvider = {
         data: json.data,
       }))
       .catch((e) => {
-        console.log(e);
         return Promise.reject(e);
       }),
   getMany: (resource, params) => {
@@ -65,7 +63,6 @@ const baseDataProvider = {
     return httpClient(url)
       .then(({ json }) => ({ data: json.data }))
       .catch((e) => {
-        console.log(e);
         return Promise.reject(e);
       });
   },
@@ -88,7 +85,6 @@ const baseDataProvider = {
         total: parseInt(headers.get("content-range").split("/").pop(), 10),
       }))
       .catch((e) => {
-        console.log(e);
         return Promise.reject(e);
       });
   },
