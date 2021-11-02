@@ -11,8 +11,8 @@ const Search: FC = () => {
       />
       <button type="submit" className={styles.search__button}>
         <img
-          src="/search-red.svg"
-          alt=""
+          src="https://res.cloudinary.com/dnlsengxv/image/upload/v1635840100/bookstore/frontend/search_munivl.svg"
+          alt="Search"
           className={styles.search__img}
         />
       </button>

@@ -76,7 +76,7 @@ const Footer: FC = () => {
           <div className={styles.brand}>
             <img
               className={styles.brand__logo}
-              src="/logo.svg"
+              src="https://res.cloudinary.com/dnlsengxv/image/upload/v1635840099/bookstore/frontend/logo_pdaoao.svg"
               alt="logo"
             />
             <p className={styles.brand__text}>SUPPORTING LOCAL BOOKSTORES</p>

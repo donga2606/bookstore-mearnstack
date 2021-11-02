@@ -34,14 +34,14 @@ const Home: FC<HomePropsType> = ({ lists }) => {
               <div className={styles["book-banner__images"]}>
                 <a href="" className={styles["book-banner__item"]}>
                   <img
-                    src="/Bookshop_FOXANDI.webp"
+                    src="https://res.cloudinary.com/dnlsengxv/image/upload/v1635840100/bookstore/frontend/Bookshop_FOXANDI_qfwln4.webp"
                     alt="bookshop"
                     className={styles["book-banner__img"]}
                   />
                 </a>
                 <a href="" className={styles["book-banner__item"]}>
                   <img
-                    src="/The_Man_Who.webp"
+                    src="https://res.cloudinary.com/dnlsengxv/image/upload/v1635840100/bookstore/frontend/hero-banner_cmafsb.webp"
                     alt="bookshop"
                     className={styles["book-banner__img"]}
                   />
