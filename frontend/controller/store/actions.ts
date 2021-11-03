@@ -29,17 +29,21 @@ function addToCart({
   if (isBookInCart) {
     return dispatch({
       type: ACTIONS.NOTIFY,
-      payload: { error: "Your book already in cart" },
+      payload: { type: "error", message: "Your book already in cart" },
     });
   }
   const newUserCart = createNewUserCart({ cart, book });
   updateUser(auth, { cart: newUserCart })
-    .then((response) =>
+    .then((response) => {
       dispatch({
         type: ACTIONS.AUTH,
         payload: { user: response.data.data, token: auth.token },
-      })
-    )
+      });
+      dispatch({
+        type: ACTIONS.NOTIFY,
+        payload: { type: "success", message: "Add to cart successfully" },
+      });
+    })
     .catch((error) => {
       addNotify({ type: "error", message: error }, dispatch);
     });
