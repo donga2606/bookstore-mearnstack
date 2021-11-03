@@ -53,7 +53,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Spectral:wght@600;700&display=swap"
             rel="stylesheet"
           ></link>
-          <link rel="icon" type="image/png" href="/book-favicon.ico" />
+          <link rel="icon" type="image/png" href="https://res.cloudinary.com/dnlsengxv/image/upload/v1635840098/bookstore/frontend/book-favicon_f6ddk1.ico" />
         </Head>
         <body>
           <Main />

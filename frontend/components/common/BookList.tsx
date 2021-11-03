@@ -58,14 +58,14 @@ const BookList: FC<BookListPropsType> = ({ title, avatar, books }) => {
           </div>
           <div className={styles["prev-left"]} onClick={scrollLeft}>
             <img
-              src="https://res.cloudinary.com/dnlsengxv/image/upload/v1635840529/bookstore/frontend/ic_fat_arrow_right-8cd117ef71cad1e27c159d775f4d2d0a806c8f173deb5be52b4a6dacc7fdfa0d_mkiq2u.svg"
-              alt="left-arr"
+              src="https://res.cloudinary.com/dnlsengxv/image/upload/v1635840491/bookstore/frontend/ic_fat_arrow_left-78d4b37e9bbb5fee5ded46062f2acb0558ea2c52e03e1d4cf00fe7c668c48dac_ys7knr.svg"
+              alt="right-arr"
             />
           </div>
           <div className={styles["prev-right"]} onClick={scrollRight}>
             <img
-              src="https://res.cloudinary.com/dnlsengxv/image/upload/v1635840491/bookstore/frontend/ic_fat_arrow_left-78d4b37e9bbb5fee5ded46062f2acb0558ea2c52e03e1d4cf00fe7c668c48dac_ys7knr.svg"
-              alt="right-arr"
+              src="https://res.cloudinary.com/dnlsengxv/image/upload/v1635840529/bookstore/frontend/ic_fat_arrow_right-8cd117ef71cad1e27c159d775f4d2d0a806c8f173deb5be52b4a6dacc7fdfa0d_mkiq2u.svg"
+              alt="left-arr"
             />
           </div>
         </div>
